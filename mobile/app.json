@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Future House",
+    "slug": "mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/square-icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "io.expo.client"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/square-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "io.expo.client"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

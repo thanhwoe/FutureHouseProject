@@ -1,0 +1,34 @@
+/* .container{
+    display: flex !important;
+} */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+.ui.card{
+    margin: 0 1em;
+}
+.backgroundImage{
+    background-image: url(http://127.0.0.1:8000/media/background.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+.fix-menu{
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    
+}
+.QRCode{
+    position: fixed;
+    right: 123px;
+    top: 190px;
+
+}
+#root{
+    overflow: hidden;
+}
+html{
+    scroll-behavior: smooth;
+
+}
