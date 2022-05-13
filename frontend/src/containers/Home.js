@@ -35,7 +35,10 @@ import slide3 from '../image/slide-6.jpg'
 import logo from '../image/loogu.png'
 import { Helmet } from "react-helmet";
 import Snowfall from 'react-snowfall'
-var currentHost='https://stark-badlands-33991.herokuapp.com'
+let currentHost = "http://localhost:3000"
+if (location.hostname !== "localhost" ){
+  currentHost ="https://stark-badlands-33991.herokuapp.com"
+}
 const getWidth = () => {
   const isSSR = typeof window === "undefined";
   return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth;

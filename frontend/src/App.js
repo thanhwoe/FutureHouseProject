@@ -34,8 +34,12 @@ class App extends Component {
 
 
   handleValidURL = () => {
-    let current = window.location.href
-    let landing = `https://stark-badlands-33991.herokuapp.com/landing-page`
+    const current = window.location.href
+    let domain = "http://localhost:3000"
+    if (location.hostname !== "localhost" ){
+      domain ="https://stark-badlands-33991.herokuapp.com"
+    }
+    const landing = `${domain}/landing-page`
     if (current == landing) {
       this.setState({ isMainScreen: false })
     }

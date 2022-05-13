@@ -247,22 +247,20 @@ class ProductList extends React.Component {
                                             <div style={{ "margin": "0 15px" }}>-</div>
                                             <div > ${item.discount_price}</div>
                                         </div>
-                                        <div style={{ height: '60%' }}>
+                                        <div style={{ height: '55%' }}>
                                             <Header>Description </Header>
                                             {item.description}
                                         </div>
                                         <div>
                                             <Button
-                                                color="yellow"
                                                 icon
-                                                style={{ 'width': '220px', 'height': '37px', 'marginRight': '50px' }}
+                                                style={{ 'width': '220px', 'height': '37px', 'marginRight': '50px', 'backgroundColor':'#48dbfb' }}
                                                 labelPosition="right"
                                                 onClick={() => this.handleAddToCart(item.slug)}
                                             > Add to cart <Icon name="cart plus" />
                                             </Button>
                                             <Button
-                                                color="green"
-                                                style={{ 'width': '220px', 'height': '37px' }}
+                                                style={{ 'width': '220px', 'height': '37px', 'border': '3px solid #48dbfb', 'backgroundColor':'#F8F8F9' }}
                                                 icon
                                                 labelPosition="right"
 

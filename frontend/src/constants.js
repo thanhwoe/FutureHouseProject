@@ -1,6 +1,4 @@
 
-// export const localhost ='http://127.0.0.1:8000'
-// export const socket_url ='ws://127.0.0.1:8000'
 export let domain = ""
 export let socket_url = ""
 if (location.hostname === "localhost" || location.hostname === "127.0.0.1"){
@@ -11,8 +9,6 @@ if (location.hostname === "localhost" || location.hostname === "127.0.0.1"){
     socket_url ='wss://gw-future-house.herokuapp.com'
 }
 export const localhost = domain
-// export const localhost ='https://gw-future-house.herokuapp.com'
-// export const socket_url ='wss://gw-future-house.herokuapp.com'
 const apiURL ='/api'
 export const endpoint =`${domain}${apiURL}`
 

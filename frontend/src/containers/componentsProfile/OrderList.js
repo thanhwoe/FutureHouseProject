@@ -45,6 +45,7 @@ class OrderList extends React.Component {
     }
     render() {
         const { data } = this.state
+        // console.log(localhost)
         return (
             <React.Fragment>
                 {data && (
@@ -62,9 +63,9 @@ class OrderList extends React.Component {
                                 return (
                                     <Table.Row key={i}>
                                         <Table.Cell collapsing>{i + 1}</Table.Cell>
-                                        <Table.Cell collapsing><Image size='tiny' src={`${localhost}${orderItem.item.thumbnail}`} /></Table.Cell>
+                                        <Table.Cell collapsing><Image size='tiny' src={`${orderItem.item.thumbnail}`} /></Table.Cell>
                                         <Table.Cell>
-                                            <Link to={{ pathname: `products/${orderItem.item.id}` }}>{orderItem.item.title}</Link>
+                                            <Link to={{ pathname: `products/${orderItem.item.slug}/${orderItem.item.id}` }}>{orderItem.item.title}</Link>
                                             <Icon
                                                 name='trash'
                                                 color="red"

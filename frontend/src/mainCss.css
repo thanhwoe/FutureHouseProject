@@ -79,12 +79,12 @@
 
 .main-menu .header-cart .text {
   position: absolute;
-  top: 5px;
-  right: 20px;
-  background-color: #586da3;
+  font-size: 16px;
+  top: 11px;
+  right: 26px;
   padding: 3px 6px;
   border-radius: 10px;
-  color: white;
+  color: #586da3;
   z-index: 1;
 }
 
@@ -469,7 +469,7 @@
 }
 
 #buttonSearch {
-  top: 0.08em !important;
+  height: 45%;
 }
 
 .menuCate {

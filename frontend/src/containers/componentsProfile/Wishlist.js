@@ -55,7 +55,7 @@ const Wishlist = (props) => {
                 <Card key={item.id} style={{marginBottom:'30px'}}>
                     <Card.Content>
                         <Image src={item.thumbnail}  size='medium' />
-                        <Link to={{ pathname: `products/${item.id}` }} >
+                        <Link to={{ pathname: `products/${item.slug}/${item.id}` }} >
                             <Card.Header >{item.title}</Card.Header>
                         </Link>
 

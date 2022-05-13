@@ -131,7 +131,7 @@ class CustomLayout extends React.Component {
               </Link>
             </div>
             <Input
-              icon={<Icon name='search' size="large" id='buttonSearch' circular link onClick={() => this.handleSearch()}/>}
+              icon={<Icon name='search' size="large" id='buttonSearch' bordered link onClick={() => this.handleSearch()}/>}
               placeholder='Search...'
               onChange={this.handelChange}
               className="searchInput"
